@@ -12,7 +12,7 @@ h1{
     color: white;
 }
 h2{
-    font-size: 48px;
+    font-size: 45px;
     color: #0A0826;
 }
 p{
@@ -100,7 +100,7 @@ section{
 }
 
 
-/*--------------------4th part css------------------------------------------*/
+/*---------------------------4th part css------------------------------------------*/
 .copa-video{
     display: flex;
     justify-content:space-around;
@@ -199,4 +199,15 @@ section{
     height: 50px;
 }
 
+}
+
+@media only screen and (min-width:669px) and (max-width:992px){
+    .banner-flex, .players-blog, .copa-video,.news-paper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .banner-flex,.players-blog, .copa-video,.news-paper{
+        flex-direction: column;
+        
+    }
 }
